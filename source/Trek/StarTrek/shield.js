@@ -44,7 +44,6 @@ Shield.prototype = {
     requestEnergy: function(shipReserve, amountRequested) {
         "use strict";
         var amountFromShipReserve = shipReserve.transferEnergy(amountRequested);
-//        var amountFromShipReserve = amountRequested; // replace with actual energy received later
         var leftOverAmount = 0;
         
         // apply amountFromShipReserve to shield
