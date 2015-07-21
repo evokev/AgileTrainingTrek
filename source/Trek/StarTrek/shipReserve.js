@@ -1,26 +1,23 @@
+var ShipReserve;
+
 // Ship Reserve 
-ShipReserve = function() {
+ShipReserve = function () {
+    "use strict";
     this.reserve = 1000; // default
 	this.minReserveEnergy = 150; // default
 };
 
 ShipReserve.prototype = {
  
-    transferEnergy: function(energyRequired) {
-		if(this.reserve > energyRequired)
-		{
+    transferEnergy: function (energyRequired) {
+		"use strict";
+        if (this.reserve > energyRequired) {
 			this.reserve = this.reserve - energyRequired;
 			return energyRequired;
-		} else
-		{
+		} else {
 			var energyReturn = this.reserve - this.minReserveEnergy;
 			this.reserve = this.reserve - energyReturn;
-			return energyReturn; 
+			return energyReturn;
 		}
-		
-		
-        
     }
-	
-    
 };
