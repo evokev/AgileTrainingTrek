@@ -22,7 +22,7 @@
     <script type="text/javascript" src="Tests/shieldCharacterization.test.js"></script>
     <script type="text/javascript" src="Tests/shipReserveCharacterization.test.js"></script>
     <script type="text/javascript" src="Tests/subsystemCharacterization.test.js"></script>
-<!-- test comment -->
+
 </head>
 
 <body>
